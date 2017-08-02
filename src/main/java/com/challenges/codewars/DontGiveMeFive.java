@@ -1,5 +1,8 @@
 package com.challenges.codewars;
 
+/*
+ * Dont count numbers which have 5 inside. Negative numbers accepted.
+ */
 public class DontGiveMeFive {
     public static void main(String[] args) {
 
