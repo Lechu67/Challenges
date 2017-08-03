@@ -7,7 +7,7 @@ public class DontGiveMeFive {
     public static void main(String[] args) {
 
         System.out.println("Starting method");
-        int a = dontGiveMeFiveBetter(-6, 6);
+        int a = dontGiveMeFiveBetter(7, 6);
         System.out.println(a);
 
     }
@@ -41,6 +41,7 @@ public class DontGiveMeFive {
     public static int dontGiveMeFiveBetter(int start, int end) {
 
         int count = 0;
+        if(start > end){throw new RuntimeException("Start is greater than end !");}
         while(start<=end){
             if(!String.valueOf(start).contains("5")){
                 count++;

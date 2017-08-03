@@ -17,5 +17,9 @@ public class DontGiveMeFiveTest {
 	public void testDontGiveMeFiveBetter() {
 		assertEquals(11, obj.dontGiveMeFiveBetter(-6, 6));
 	}
+	@Test(expected=RuntimeException.class)
+	public void testDontGiveMeFiveBetter_startBiggerThanEnd() {
+		obj.dontGiveMeFiveBetter(7, 6);
+	}
 
 }
